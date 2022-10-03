@@ -1,0 +1,254 @@
+.button {
+    font-weight: 600;
+    font-family: "Open Sans";
+    overflow: hidden;
+    position: relative;
+    height: 34px;
+    padding: 4px 15px;
+    border-radius: 8px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition: ease-in-out 0.2s all;
+    fill: rgb(255, 255, 255);
+}
+
+.block {
+    width: 100%;
+    display: block;
+}
+
+.button * {
+    pointer-events: none;
+}
+
+.iconLeft {
+    position: absolute;
+    left: 8px;
+}
+
+.l .iconLeft {
+    position: absolute;
+    left: 10px;
+}
+
+.iconRight {
+    position: absolute;
+    right: 8px;
+}
+
+.l .iconRight {
+    position: absolute;
+    right: 10px;
+}
+
+.button[data-icon-left="true"] {
+    padding-left: 35px;
+}
+
+.button[data-icon-left="true"].xs {
+    padding-left: 30px;
+}
+
+.button.m[data-icon-left="true"] {
+    padding-left: 40px;
+}
+
+.button.l[data-icon-left="true"] {
+    padding-left: 43px;
+}
+
+.button[data-icon-right="true"] {
+    padding-right: 35px;
+}
+
+.button[data-icon-right="true"].xs {
+    padding-right: 30px;
+}
+
+.button.m[data-icon-right="true"] {
+    padding-right: 40px;
+}
+
+.button.l[data-icon-right="true"] {
+    padding-right: 43px;
+}
+
+.xs>i {
+    top: 5px;
+}
+
+.s>i {
+    top: 8px;
+}
+
+.m>i {
+    top: 12px;
+}
+
+.l>i {
+    top: 15px;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    transition: ease-in-out 0.2s all;
+}
+
+/* Variants */
+.primary {
+    background: rgb(22, 109, 194);
+    color: rgb(255, 255, 255);
+}
+
+.primary:hover {
+    background: rgb(17, 85, 150);
+}
+
+.secondary {
+    border: solid 1px #186dc2;
+    background: rgba(255, 255, 255, 0);
+    color: rgb(22, 109, 194);
+    fill: rgb(22, 109, 194);
+}
+
+.secondary:hover {
+    background: rgb(22, 109, 194);
+    color: rgb(255, 255, 255);
+    fill: rgb(255, 255, 255);
+}
+
+.ternary {
+    background: rgba(255, 255, 255, 0);
+    color: rgb(22, 109, 194);
+    fill: rgb(22, 109, 194);
+}
+
+.ternary:hover {
+    background: rgb(225, 240, 255);
+}
+
+.dashed {
+    border: dashed 1px #186dc2;
+    background: rgba(255, 255, 255, 0);
+    color: rgb(22, 109, 194);
+    fill: rgb(22, 109, 194);
+}
+
+.dashed:hover {
+    background: rgb(225, 240, 255);
+}
+
+/* Sizes */
+.xs {
+    height: 26px;
+    padding: 4px 5px;
+    gap: 0.25rem;
+}
+
+.m {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    height: 48px;
+    padding: 12px 31px;
+}
+
+.l {
+    font-size: 18px;
+    line-height: 27px;
+    font-style: normal;
+    letter-spacing: 0.25px;
+    height: 56px;
+    padding: 14.5px 31px;
+}
+
+.button[data-loading="true"] {
+    color: transparent;
+}
+
+.button[data-loading="true"]>*:not(.loading) {
+    opacity: 0;
+}
+
+.button[data-loading="true"]::before {
+    content: '';
+    border-width: 1.333px;
+    border-style: solid;
+    border-color: transparent white white;
+    border-image: initial;
+    width: 13.33px;
+    height: 13.33px;
+    border-radius: 50%;
+    animation: 1s linear 0s infinite normal none running spin;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute
+}
+
+.button.xs[data-loading="true"]::before {
+    content: '';
+    border-width: 1.333px;
+    border-color: transparent white white;
+    width: 13px;
+    height: 13px;
+}
+
+.button.s[data-loading="true"]::before {
+    content: '';
+    border-width: 1.5px;
+    width: 16px;
+    height: 16px;
+}
+
+.button.m[data-loading="true"]::before {
+    content: '';
+    border-width: 2px;
+    width: 20px;
+    height: 20px;
+}
+
+.button.l[data-loading="true"]::before {
+    content: '';
+    border-width: 2.333px;
+    width: 26px;
+    height: 26px;
+}
+
+.button.secondary[data-loading="true"]::before,
+.button.ternary[data-loading="true"]::before,
+.button.dashed[data-loading="true"]::before {
+    border-color: transparent rgb(22, 109, 194) rgb(22, 109, 194);
+}
+
+.button.secondary:hover[data-loading="true"]::before {
+    border-color: transparent rgb(255, 255, 255)rgb(255, 255, 255);
+}
+
+.button:disabled {
+    background-color: #F4F4F5;
+    color: rgb(164, 167, 172);
+    border-color: rgb(164, 167, 172);
+    fill: rgb(164, 167, 172);
+    cursor: not-allowed;
+}
+
+.button[data-loading="true"]:disabled::before,
+.button[data-loading="true"]:disabled:hover::before {
+    border-color: transparent rgb(164, 167, 172) rgb(164, 167, 172);
+}
+
+.button[data-loading="true"]:disabled {
+    color: transparent;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}

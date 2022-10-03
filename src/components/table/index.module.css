@@ -1,0 +1,112 @@
+.container {
+    width: 100%;
+    overflow: auto;
+}
+
+.table {
+    border-collapse: separate;
+    border-spacing: 0px 8px;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.table thead tr th {
+    background: rgb(22, 109, 194);
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 24px;
+    font-style: normal;
+    letter-spacing: 0.25px;
+    vertical-align: middle;
+}
+
+.table tr th>div {
+    position: relative;
+    height: 48px;
+    padding: 12px 24px;
+}
+
+.table tr td {
+    background: rgb(255, 255, 255);
+    padding: 16px 24px;
+}
+
+.table tr:hover td {
+    background: rgb(184, 220, 255);
+}
+
+.table tr th:first-of-type,
+.table tr td:first-of-type {
+    border-radius: 8px 0px 0px 8px;
+}
+
+.table tr th:last-of-type,
+.table tr td:last-of-type {
+    border-radius: 0px 8px 8px 0px;
+}
+
+.table th[data-order="true"]>div {
+    position: relative;
+    padding-right: 50px;
+}
+
+.table th[data-order="true"]>div>span>button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    border: none;
+    background: transparent;
+    color: white;
+    fill: white;
+    cursor: pointer;
+    padding-left: 13px;
+}
+
+.table th[data-order="true"]>div>span>button>i>svg {
+    transform: rotate(90deg);
+}
+
+.table th[data-order="true"] button[data-order="true"] {
+    fill: rgb(184, 220, 255);
+}
+
+.sort {
+    right: 2rem;
+    width: auto;
+    border-radius: 8px;
+    position: absolute;
+    top: 46px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    box-shadow: rgb(50 58 68 / 6%) 0px 8px 24px;
+    overflow: hidden;
+    min-width: 172px;
+    z-index: 1080;
+}
+
+.sort>* {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 9.5px 16px;
+    font-family: "Open Sans";
+    font-weight: 400;
+    color: rgb(50, 58, 68);
+    font-size: 16px;
+    line-height: 24px;
+    font-style: normal;
+    letter-spacing: 0.25px;
+    text-align: left;
+}
+
+.table th[data-order="true"] div span div button[data-order="true"],
+.sort>*:hover {
+    color: rgb(22, 109, 194);
+    font-weight: 700;
+    background: rgb(225, 240, 255);
+}

@@ -1,0 +1,39 @@
+[
+    {
+        "title": "Docencia",
+        "start": "Febrero 2022",
+        "end": "Actualmente",
+        "company": "Infoclub SPA · Jornada parcial",
+        "imageSrc": "/images/logo-infoclub.png",
+        "tags": ["Javascript", "NodeJS", "PostgreSQL"],
+        "excerpt": "Encargado de impartir el curso Bootcamp Javascript FullStack...",
+        "text": "Encargado de impartir el curso Bootcamp Javascript FullStack <br /> <a href=\"https://talentodigitalparachile.cl/curso/desarrollo-de-aplicaciones-full-stack-javascript-trainee/\">Talento digital para Chile</a>"
+    },
+    {
+        "title": "Desarrollador FullStack Experto",
+        "start": "Junio 2021",
+        "end": "Mayo 2022",
+        "company": "Walmart Chile · Jornada completa",
+        "imageSrc": "/images/logo-walmart-chile.jpeg",
+        "tags": [
+            "React",
+            "NextJS"
+        ],
+        "excerpt": "Desarrollo, Diseño de aplicaciones para Walmart, principalmente con tecnologías basadas en ES6...",
+        "text": "Desarrollo, Diseño de aplicaciones para Walmart, principalmente con tecnologías basadas en ES6.<br/>- Diseño de Software<br/>- Mantenimiento de plataforma<br/>- Desarrollo de nuevos artefactos<br/>- Modelamiento de Base de Datos<br/>- Coordinación<br/>- Migración de Software: React hacia NextJS, Express y KOA hacia Fastify"
+    },
+    {
+        "title": "Full Stack Senior Engineer",
+        "start": "Abril 2020",
+        "end": "Junio 2021",
+        "company": "Falabella · Jornada completa",
+        "imageSrc": "/images/logo-walmart-chile.jpeg",
+        "tags": [
+            "React",
+            "NextJS",
+            "GCP"
+        ],
+        "excerpt": "Desarrollo de Aplicaciones con React y Typescript...",
+        "text": "- Desarrollo de Aplicaciones con React y Typescript<br />- Desarrollo de Plugins para React<br />- Desarrollo Servicios con NodeJs/Fastify<br />- Desarrollo de Plugins para Fastity<br />- Consumo y desarrollo de APIs<br />- Testing de front y back<br />- Desarrollo Aplicaciones Go<br />- Preparar Pipelines y Configurar para gitlab-ci<br />- Manejar K8S, Docker y GCP<br />- Prestar soporte a otros miembros de la compañía<br />- Integración con la plataforma<br />- Solución de dudas<br />- Disponibilizar e integrar micro aplicaciones en la plataforma principal<br />- Diseño y desarrollo de interfaces y componentes visuales"
+    }
+]

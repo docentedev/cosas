@@ -1,0 +1,29 @@
+.containerProfile {
+    width: 10rem;
+    height: 10rem;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+}
+
+.containerProfile video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.containerProfile::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 95%;
+    background-color: transparent;
+    border-radius: 50%;
+    border: solid 0.3rem hsl(0deg 0% 100%);
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
